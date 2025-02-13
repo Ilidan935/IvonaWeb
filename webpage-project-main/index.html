@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ivona Vojvodić</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/sticky-footer.js"></script>
+</head>
+
+<body>
+
+  <div data-sticky-wrap>
+    <header id="myheader">
+      <div id="header-frame">
+        <script src="scripts/scroll-header.js"></script>
+        <nav>
+          <a href="#" style="display:flex"><img id="logo-img" src="images/Ivona2.png" /></a>
+          <div class="dropdown">
+            <button class="dropbtn" type="button" tabindex="0">
+              <img src="images/icons8-menu-7.png" />
+            </button>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="pages/about_me.html">O meni</a></li>
+                <li><a href="pages/album.html">Portfolio</a></li>
+                <li><a href="pages/contact.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <h1 class="title">Ivona Vojvodić Portfolio</h1>
+      <script src="scripts/general.js"></script>
+      <p class="pg">Ovo je web stranica Ivone Vojvodić, ovdje ide neke generalne info.</p>
+    </div>
+
+  </div>
+
+  <div data-sticky-footer>
+    <footer>
+      <p>2025 &copy; <br>Ivona Vojvodić<br>
+        <a href="mailto:ivona.vojvodic0@gmail.com" target="blank">ivona.vojvodic0@gmail.com</a>
+        <script>
+          stickyFooter.init();
+        </script>
+      </p>
+    </footer>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/scroll-header.js"></script>
+  </div>
+
+</body>
+
+</html>

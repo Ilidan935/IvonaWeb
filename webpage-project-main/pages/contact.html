@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='..\styles\main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='..\styles\contact.css'>
+    
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="..\images\favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="..\scripts\sticky-footer.js"></script>
+</head>
+
+<body>
+    <div data-sticky-wrap>
+    <header id="myHeader">
+        <script src="..\scripts\scroll-header.js"> </script>
+        <div id="header-frame">
+            <nav>
+                <a href="..\index.html" style="display: flex"><img id="logo-img" src="..\images\Ivona2.png" /></a>
+                <div class="dropdown">
+                    <button class="dropbtn" type="button">
+                        <img src="..\images\icons8-menu-7.png" />
+                    </button>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="..\index.html">Home</a></li>
+                            <li><a href="about_me.html">O meni</a></li>
+                            <li> <a href="album.html">Portfolio</a>
+                            <li> <a href="#">Kontakt</a></li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="https://formsubmit.co/c83693b94afadfbc7575149365fbbd13" method="POST">
+
+            <!-- Honeypot -->
+
+            <input type="text" name="_honey" style="display:none">
+
+            <!--Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="https://dorastern1.gitlab.io/webpage-project/pages/success.html">
+
+
+            <label for="fname">Ime</label>
+            <input type="text" id="fname" name="First&nbsp;name" placeholder="Vaše ime..." required>
+
+            <label for="lname">Prezime</label>
+            <input type="text" id="lname" name="Last&nbsp;name" placeholder="Vaše prezime...">
+
+            <label for="lname">Email</label>
+            <input type="text" id="email" name="Email" placeholder="Vaš email..." required>
+
+            <label for="subject">Tekst</label>
+            <textarea id="subject" name="Subject" placeholder="Napišite nešto" style="height:200px" required></textarea>
+
+            <input type="submit" value="Predaj" id="submitButton">
+            <!--
+            <script>
+                const subButton = document.getElementById("submitButton");
+                subButton.addEventListener("click", function(e){
+                    alert("Data submitted!!")
+                });
+            </script>
+        -->
+        </form>
+    </div>
+    </div>
+    <div data-sticky-footer>
+    <footer >
+        <p>2025 &copy; <br>Ivona Vojvodić<br>
+            <a href="mailto:ivona.vojvodic0@gmail.com" target="blank">ivona.vojvodic0@gmail.com</a>
+          <script>
+            stickyFooter.init();
+          </script>
+      </footer>
+    </div>
+      <script src="..\scripts\dropdown.js"></script>
+</body>
+
+</html>

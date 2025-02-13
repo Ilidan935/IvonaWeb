@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>O meni</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="..\styles\main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="..\styles\about_me.css" />
+
+  <link rel="icon" type="image/x-icon" href="..\images\favicon-32x32.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="..\scripts\sticky-footer.js"></script>
+  
+</head>
+
+<body>
+  <div data-sticky-wrap>
+  <header id="myHeader">
+    <script src="..\scripts\scroll-header.js"></script>
+    <div id="header-frame">
+      <nav>
+        <a href="..\index.html" style="display: flex"><img id="logo-img" src="..\images\Ivona2.png" /></a>
+        <div class="dropdown">
+          <button class="dropbtn" type="button">
+            <img src="..\images\icons8-menu-7.png" />
+          </button>
+          <div class="dropdown-content">
+            <ul>
+              <li><a href="..\index.html">Home</a></li>
+              <li><a href="#">O meni</a></li>
+              <li>
+                <a href="album.html">Portfolio</a>
+              </li>
+              <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="main-content">
+    <h1 class="title">Ovo su neke informacije o meni.</h1>
+    <p class="pg">Tekst o tebi.
+  </div>
+</div>
+<div data-sticky-footer>
+  <footer >
+    <p>2025 &copy; <br>Ivona Vojvodić<br>
+      <a href="mailto:ivona.vojvodic0@gmail.com" target="blank">ivona.vojvodic0@gmail.com</a>
+    </p>
+    <script>
+      stickyFooter.init();
+    </script>
+  </footer>
+</div>
+  <script src="..\scripts\dropdown.js"></script>
+  <script src="..\scripts\general.js"></script>
+</body>
+
+</html>
